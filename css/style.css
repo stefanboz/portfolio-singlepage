@@ -1,0 +1,820 @@
+/*
+ *
+ * CUDA SINGLE PAGE PORTFOLIO STYLESHEET
+ * by Stefan Bozic
+*/ 
+
+.container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+body, h1, h2, h3, h4, h5, h6, a, span, input, textarea {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 21px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+section {
+	padding: 120px 0;
+}
+
+img {
+	height: auto;
+}
+
+.btn {
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+}
+
+.btn a {
+	font-size: 18px;
+	font-weight: 600;
+	width: 290px;
+	height: 65px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	line-height: 3.5;
+	border-radius: 7px;
+}
+
+.section_title {
+	margin: 0 0 50px;
+	text-align: center;
+	position: relative;
+}
+
+.section_title:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -43px;
+	width: 87px;
+	height: 4px;
+	background-color: rgba(0,0,0,.2);
+}
+
+.section_title + h5 {
+	text-align: center;
+}
+
+.white {
+	color: #fff;
+}
+
+.dark {
+	color: #3c4761;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* HEADER */
+
+header {
+	background-color: #87509c;
+	padding: 57px 0 0;
+	z-index: 10000;
+	height: 40px;
+	position: relative;
+}
+
+header.fixed {
+	padding: 20px 0 40px;
+	box-shadow: 0 3px 14px 5px rgba(0,0,0,.5);
+}
+
+.site_header {
+	max-width: 1040px;
+	margin: auto;
+    height: 40px;
+    padding: 5px;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    border-top: 0;
+}
+
+.logo {
+	float: left;
+	margin-top: -10px;
+}
+
+.menu {
+	float: right;
+}
+
+.fixed .menu {
+	margin-top: 10px;
+}
+
+.menu a {
+	float: left;
+	padding: 10px 15px;
+	color: #fff;
+}
+
+.menu .active {
+	background-color: #643a79;
+	border-radius: 8px;
+}
+
+.mobile_menu {
+	float: right;
+	display: none;
+}
+
+.landing_phrase {
+	text-align: center;
+	padding: 140px 0 145px;
+	background-color: #87509c;
+}
+
+.landing_phrase h1 {
+	color: #fff;
+	line-height: 1.3;
+}
+
+.landing_phrase h1:nth-child(2) {
+	margin: 0 0 60px;
+}
+
+.landing_phrase .btn a {
+	background-color: #eb7d4b;
+	border-bottom-color: #c86a40;
+}
+
+
+
+/* SERVICES SECTION */
+
+.services {
+	background-color: #17c2a4;
+}
+
+.services h5 {
+	width: 56%;
+	margin: auto;
+	color: #fff;
+}
+
+.services ul {
+	margin: 80px 0 0 0;
+}
+
+.services li {
+    text-align: center;
+    width: 19%;
+    float: left;
+    margin: 0 83px 0 0;
+}
+
+.services li:last-child {
+	margin: 0;
+}
+
+.service_image {
+	min-height: 150px;
+}
+
+.service_caption {
+	color: #fff;
+}
+
+.service_caption h3 {
+	margin: 10px 0 25px 0;
+}
+
+
+
+/* TEAM SECTION */
+
+.team {
+	background-color: #e7f1f8;
+}
+
+.team h5 {
+	color: #535e75;
+}
+
+.team ul {
+	margin: 80px 0 0 0;
+}
+
+.team li {
+	float: left;
+	width: 20%;
+	margin: 0 65px 0 0;
+	text-align: center;
+}
+
+.team li:last-child {
+	margin: 0;
+}
+
+.team_member_image img {
+	border-radius: 50%;
+	max-width: 100%;
+}
+
+.name {
+	color: #27283d;
+	margin: 40px 0 0;
+}
+
+.position {
+	color: #30bae7;
+	margin: 15px 0 30px;
+}
+
+.team_member_about {
+	margin: 0 auto 30px;
+	color: #535e75;
+	min-height: 160px;
+}
+
+.team_member_social > a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: #bdd1df;
+	background-image: url("../img/sn_icons.png");
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 0 13px 0 0;
+}
+
+.team_member_social > a:hover {
+	background-color: #5D5C8C;
+}
+
+.team_fb {
+	background-position: -9% 25%;
+}
+
+.team_twitter {
+	background-position: 29% 25%;
+}
+
+.team_linkedin {
+	background-position: 67% 32%;
+}
+
+.team_mail {
+	background-position: 104% 32%;
+}
+
+
+
+/* SKILLS SECTION */
+
+.skills {
+	background-color: #fff;
+}
+
+.skills h5 {
+	color: #3c4761;
+	width: 75%;
+	margin: auto;
+}
+
+.skills ul {
+	margin: 85px 0 0 0;
+}
+
+.skills li {
+	margin: 0 100px 0 0;
+}
+
+.skills li:last-child {
+	margin: 0 20px 0 0;
+}
+
+.c100.p90 .bar, 
+.c100.p90 .fill {
+	border-color: #30bae7;
+}
+
+.c100.p75 .bar,
+.c100.p75 .fill {
+	border-color: #d74680;
+}
+
+.c100.p70 .bar,
+.c100.p70 .fill {
+	border-color: #15c7a8;
+}
+
+.c100.p85 .bar,
+.c100.p85 .fill {
+	border-color: #eb7d4b;
+}
+
+.c100.big {
+  font-size: 180px;
+}
+
+.c100 span {
+	color: #3c4761;
+}
+
+.c100 h3 {
+	position: absolute;
+	top: 105%;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+	background-color: #ffdd99;
+	text-align: center;
+}
+
+.portfolio .section_title + h5 {
+	color: #393939;
+	width: 75%;
+	margin: auto;
+}
+
+.portfolio_sections {
+	text-align: center;
+	margin: 45px 0 60px;
+}
+
+.portfolio_sections > a {
+	display: inline-block;
+	width: 84px;
+	height: 38px;
+	border-radius: 7px;
+	color: #393939;
+	background-color: #ebc985;
+	line-height: 2.4;
+	margin-right: 10px;
+}
+
+.portfolio_active {
+	background-color: #fff !important;
+}
+
+.item {
+	float: left;
+	margin: 0 0 65px 0;
+}
+
+.item h5 {
+	margin: 30px 0 0 0;
+}
+
+.portfolio_items .item:nth-child(odd) {
+	margin: 0 40px 65 0;
+}
+
+.portfolio .btn a {
+	background-color: #17c2a4;
+	border-bottom-color: #14a58c;
+}
+
+
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+	background-color: #d74680;
+}
+
+.testimonials h5 {
+	color: #fff;
+}
+
+.testimonials li {
+	float: left;
+	width: 45%;
+	margin: 0 0 50px 0;
+}
+
+.client_image {
+	float: left;
+	margin: 0 45px 0 0;
+}
+
+.client_image img {
+	border-radius: 50%;
+}
+
+.client_statement {
+	float: left;
+	width: 60%;
+	color: #fff;
+}
+
+.client_statement h4 {
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	margin: 0 0 35px 0;
+}
+
+.client_statement h3 {
+	font-size: 21px;
+}
+
+.client_statement h5 {
+	font-size: 16px;
+	color: #ffdd99;
+}
+
+.testimonials ul {
+	margin: 70px 0 0 0;
+}
+
+
+
+/* CONTACT SECTION */
+
+.contact {
+	background-color: #3c5499;
+}
+
+.contact .container {
+	max-width: 860px;
+}
+
+.contact h5 {
+	color: #fff;
+	margin: 0 0 75px 0;
+}
+
+input,
+textarea {
+	background-color: #273a71;
+	border: none;
+	box-sizing: border-box;
+	border-radius: 7px;
+	position: relative;
+}
+
+.contact_name,
+.contact_email {
+	display: block;
+	width: 48%;
+	margin: 0 0 25px 0;
+	padding: 25px 0 25px 25px;
+}
+
+.contact_name {
+	float: left;
+}
+
+.contact_email {
+	float: right;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 25px 0 25px 25px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	font-size: 14px;
+}
+
+
+input[type="submit"] {
+	font-size: 18px;
+	font-weight: 600;
+	width: 290px;
+	height: 65px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	border-bottom: 4px solid #299ec5;
+	line-height: 3.5;
+	border-radius: 7px;
+	background-color: #30bae7;
+	margin: 60px auto 0;
+	cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+footer {
+	background-color: #344b8e;
+	border-top: 1px solid #3c5499;
+}
+
+footer ul {
+	text-align: center;
+}
+
+footer li {
+	display: inline-block;
+	margin: 45px 20px;
+}
+
+footer li:hover a {
+	color: #30bae7;
+}
+
+footer li a {
+	color: #fff;
+	font-weight: 400;
+	display: block;
+	font-size: 24px;
+}
+
+
+
+/*** MEDIA QUERIES FOR RESPONSIVE EXPERIENCE ***/
+
+@media screen and (max-width: 1200px) {
+
+	header, section, footer {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	section {
+		padding-top: 70px !important;
+		padding-bottom: 70px !important;
+	}
+
+	h1 {
+		font-size: 34px;
+	}
+
+	.services ul {
+		text-align: center;
+	}
+
+	.services li {
+		float: left;
+		width: 42%;
+		margin: 0 1% 7% 0;
+	}
+
+	.services li:last-child {
+		margin: 0 0 40px 0;
+	}
+
+	.team ul {
+		text-align: center;
+	}
+
+	.team li {
+		float: none;
+		width: 40%;
+		display: inline-block;
+		margin: 0 5% 10% 0;
+	}
+
+	.team_member_about {
+		min-height: 65px;
+		margin: 0 auto 20px;
+	}
+
+	.skills ul {
+		text-align: center;
+	}
+
+	.c100 {
+		float: none;
+		display: inline-block;
+	}
+
+	.c100.big {
+   		 font-size: 100px;
+	}
+
+	.portfolio_items {
+		text-align: center;
+	}
+	
+	.portfolio_items .item,
+	.portfolio_items .item:nth-child(odd) {
+		margin: 0 0 30px 0;
+	}
+
+	.item {
+		float: none;
+	}
+
+	.testimonials ul {
+		text-align: center;
+	}
+
+	.testimonials li {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.client_image {
+		float: none;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	.client_statement {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.section_title + h5 {
+		font-size: 16px;
+	}
+
+	footer li a {
+		font-size: 16px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	h1 {
+		font-size: 25px;
+	}
+
+	header {
+		padding: 20px 0 40px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.mobile_menu {
+		display: block;
+	}
+
+	.mobile_menu a {
+		float: none;
+		display: block;
+	}
+
+	#jPanelMenu-menu {
+		width: 100% !important;
+		background-color: #87509c;
+	}
+
+	#jPanelMenu-menu li {
+		width: 100%;
+		display: block;
+	}
+
+	#jPanelMenu-menu a {
+		display: block;
+		width: 100%;
+		background-color: #87509c;
+		border-bottom: 1px solid #d7d7d7;
+		padding: 15px 0 15px 15px;
+		font-size: 16px;
+	}
+
+	#jPanelMenu-menu a.active {
+		background-color: #643a79;
+		border-radius: 0;
+	}
+
+	.nav_item_active {
+		border-radius: 0;
+	} 
+
+	.section_title + h5 {
+		font-size: 15px;
+	}
+
+	.services li {
+		float: none;
+		margin: 0 0 30px;
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+	}
+
+	.team li {
+		width: 50%;
+		float: none;
+		display: inline-block;
+		margin: 0 0 30px;
+	}
+
+	.skills li {
+		display: block;
+		margin: 0 auto 85px;
+	}
+
+	.skills li:last-child {
+		margin: 0 auto;
+	}
+
+	.c100.big {
+		font-size: 140px;
+	}
+
+	.testimonials li {
+		width: 100%;
+	}
+
+	.contact_name, .contact_email {
+		width: 100%;
+	}
+
+	footer {
+		padding-top: 20px;
+	}
+
+	footer li {
+		display: block;
+		float: left;
+	    margin: 0 0 20px;
+	    width: 20%;
+	    height: 40px;
+	    line-height: 2.3;
+	    text-align: left;
+	}
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+	.portfolio_sections > a {
+		width: 35%;
+		height: 40px;
+		line-height: 2.5;
+		margin-bottom: 30px;
+	}
+
+	footer li {
+		display: block;
+		margin: 25px auto;
+	}
+}
